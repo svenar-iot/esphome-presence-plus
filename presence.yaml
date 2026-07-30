@@ -13,10 +13,6 @@ esphome:
   comment: ${device_name}
   friendly_name: "${device_name}"
 
-external_components:
-  - source: github://hareeshmu/esphome@ld2450
-    components: [ld2450]
-
 wifi:
   power_save_mode: none
   ap:
@@ -89,7 +85,6 @@ uart:
 ld2450:
   id: ld2450_radar
   uart_id: uart_bus
-  throttle: 1000ms
 
 sensor:
   - platform: uptime
